@@ -29,7 +29,7 @@ foreach ($students as $student){
         $middle = floor($middle). '+';
     }
 
-    $endscores = substr($sum, -1);
+    $endscores = substr($sum, -1); // Беру "последнюю цифру числа, т.к. в дальнейшем числа могут быть двух- и более значными
     if($endscores == 1){
         $sum = $sum.' оценка';
     }elseif ($endscores >= 2 and $sum <=4){
